@@ -15,4 +15,3 @@ match({ routes, location }, () => {
     document.getElementById('app')
   )
 })
-

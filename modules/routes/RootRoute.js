@@ -9,11 +9,13 @@ export default {
   component: App,
   getChildRoutes(location, cb) {
     require.ensure([], (require) => {
-      cb(null, [ require('./AboutRoute') ])
+      cb(null, [
+        require('./AboutRoute'),
+        require('./newRoute'),
+      ])
     })
   },
   indexRoute: {
     component: Index
   }
 }
-

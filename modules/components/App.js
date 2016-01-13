@@ -9,11 +9,10 @@ export default class App extends React.Component {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About (lazy loaded)</Link></li>
+          <li><Link to="/new">New route</Link></li>
         </ul>
         {this.props.children}
       </div>
     )
   }
 }
-
-
